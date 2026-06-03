@@ -83,7 +83,7 @@ Traditional DeFi lending requires 150–300% overcollateralization, charges flat
     │ /financial-│ /internal/credit-event    │ soroban-testnet.stellar.org
     │ data       │                           │
 ┌───▼────────────▼───┐              ┌────────▼──────────────────────────┐
-│ Mock Bank (:3002)  │              │  Stellar Testnet (Soroban)        │
+│ Bank agent (:3002)  │              │  Stellar Testnet (Soroban)        │
 │ • Ed25519 signed   │              │                                   │
 │   financial data   │              │  proof_verifier  Groth16/BLS381   │
 │ • Demo profiles    │              │  risk_policy     tier → rate bps  │
