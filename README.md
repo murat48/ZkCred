@@ -14,7 +14,7 @@
 - [Smart Contracts](#smart-contracts)
 - [Agents](#agents)
   - [Risk Oracle Provider](#1-risk-oracle-provider--port-3001)
-  - [Mock Bank Data Provider](#2-mock-bank-data-provider--port-3002)
+  - [Bank Agent Data Provider](#2-bank-Agent-data-provider--port-3002)
   - [AI Risk Scoring Agent](#3-ai-risk-scoring-agent--port-8000)
 - [x402 Machine Payments](#x402-machine-payments)
 - [Frontend](#frontend)
@@ -72,7 +72,7 @@ Traditional DeFi lending requires 150–300% overcollateralization, charges flat
            │                  └────────────────────────────────────────┘
 ┌──────────▼──────────────────────────────────────────────────────┐
 │  Risk Oracle Provider (:3001)                                   │
-│  • x402 payment gate (mock | live via OZ Channels facilitator) │
+│  • x402 payment gate (live via OZ Channels facilitator) │
 │  • Attestation: fetches & verifies Ed25519-signed bank data     │
 │  • snarkjs: generates fresh Groth16 proofs per borrow request   │
 │  • snarkjs: verifies proofs (BLS12-381)                         │
