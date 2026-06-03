@@ -1,0 +1,21 @@
+[package]
+name = "lending_pool"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["lib", "cdylib"]
+doctest = false
+
+[dependencies]
+soroban-sdk = { workspace = true }
+
+# The sibling contracts are dev-only: at runtime lending_pool calls them by
+# address through `#[contractclient]` interfaces, so their code is never linked
+# into this wasm (avoids cross-crate LTO bitcode conflicts). Tests register the
+# real implementations to exercise true cross-contract calls.
+[dev-dependencies]
+soroban-sdk = { workspace = true, features = ["testutils"] }
+proof_verifier = { path = "../proof_verifier" }
+risk_policy = { path = "../risk_policy" }
+rate_calculator = { path = "../rate_calculator" }

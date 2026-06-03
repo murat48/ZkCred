@@ -1,0 +1,14 @@
+{
+    "monthly_income":     "3200",
+    "repaid_loans_count": "5",
+    "default_count":      "0",
+    "monthly_debt":       "700",
+    "employment_months":  "18",
+    "bills_ok":           "1",
+    "protocol_id":        "162723408271563627761121128780390168113",
+    "nonce_hi":           "1",
+    "nonce_lo":           "1",
+    "expiry":             "4000000",
+    "borrower_hi":        "106112832205873964221154404705519797100",
+    "borrower_lo":        "18109356334595481109358642051171595849"
+}

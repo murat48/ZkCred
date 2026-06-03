@@ -1,0 +1,14 @@
+{
+  "name": "zkcredit-x402",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "x402 buyer client — lending protocol pays the Risk Oracle for trust scores",
+  "main": "client.mjs",
+  "dependencies": {
+    "@stellar/stellar-sdk": "^13.0.0",
+    "@x402/fetch": "^2.0.0",
+    "@x402/stellar": "^2.0.0",
+    "dotenv": "^16.4.5"
+  }
+}

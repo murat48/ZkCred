@@ -1,0 +1,15 @@
+{
+  "name": "zkcredit-circuits",
+  "version": "0.1.0",
+  "private": true,
+  "description": "BLS12-381 Groth16 circuits for zkCredit (solvency + repayment proofs)",
+  "scripts": {
+    "build:solvency": "bash build.sh solvency_proof solvency",
+    "build:repayment": "bash build.sh repayment_proof repayment",
+    "build": "npm run build:solvency && npm run build:repayment"
+  },
+  "dependencies": {
+    "circomlib": "^2.0.5",
+    "snarkjs": "^0.7.5"
+  }
+}

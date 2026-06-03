@@ -1,0 +1,30 @@
+# Rust / Soroban
+contracts/target/
+**/*.rs.bk
+
+# Node
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+next-env.d.ts
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# ZK build artifacts
+circuits/**/build/
+*.ptau
+*.zkey
+*.wtns
+
+# Env / secrets
+.env
+.env.local
+*.local
+
+# OS / editor
+.DS_Store
