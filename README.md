@@ -346,7 +346,7 @@ Node.js server. Acts as both the x402-gated API and the co-signer for on-chain b
 
 ---
 
-### 2. Mock Bank Data Provider — port 3002
+### 2.Bank Agent Data Provider — port 3002
 
 Simulates a bank API that signs financial records with Ed25519. The oracle verifies the signature before using any data.
 
